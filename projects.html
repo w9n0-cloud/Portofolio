@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets | Mohamed BEN HARIZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="projects-page">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><span class="logo-text">&lt;MBH/&gt;</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="index.html#about" class="nav-link">À propos</a></li>
+            <li><a href="index.html#skills" class="nav-link">Compétences</a></li>
+            <li><a href="projects.html" class="nav-link active">Projets</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="glitch" data-text="Mes Projets">Mes Projets</h1>
+            <p class="projects-subtitle">Découvrez mes réalisations en développement web, applications et infrastructure réseau</p>
+        </div>
+    </section>
+
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    Tous
+                </button>
+                <button class="filter-tab" data-filter="web">
+                    <i class="fas fa-globe"></i>
+                    Web
+                </button>
+                <button class="filter-tab" data-filter="app">
+                    <i class="fas fa-desktop"></i>
+                    Applications
+                </button>
+                <button class="filter-tab" data-filter="network">
+                    <i class="fas fa-network-wired"></i>
+                    Réseau
+                </button>
+            </div>
+
+            <div class="projects-showcase">
+                <article class="project-showcase-card" data-category="web">
+                    <div class="project-showcase-image">
+                        <div class="project-icon-large">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Terminé</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web</span>
+                            <span class="project-date">2026</span>
+                        </div>
+                        <h3>Portfolio Personnel</h3>
+                        <p>
+                            Mon portfolio interactif ultra dynamique avec effets visuels avancés, 
+                            animations CSS, particules, et design responsive. Réalisé avec HTML, CSS 
+                            et JavaScript vanilla.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-eye"></i> Voir
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card featured-project" data-category="all">
+                    <div class="project-showcase-image gradient-nova">
+                        <div class="project-icon-large">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category hackathon-badge">🚀 Hackathon</span>
+                            <span class="project-date">Janvier 2026</span>
+                        </div>
+                        <h3>NOVA - Plateforme Événementielle</h3>
+                        <p>
+                            Projet Hackathon en équipe de 8 personnes. Plateforme web moderne pour 
+                            l'organisation d'événements (ski, bowling, escape game, laser game...).
+                            Mon rôle : Marketing digital & Développement web.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fas fa-bullhorn"></i> Marketing</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://nova.alwaysdata.net/" target="_blank" class="project-btn btn-demo">
+                                <i class="fas fa-external-link-alt"></i> Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="app">
+                    <div class="project-showcase-image gradient-2">
+                        <div class="project-icon-large">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Application</span>
+                            <span class="project-date">2026</span>
+                        </div>
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>
+                            Application Python avec interface graphique moderne pour gérer ses tâches quotidiennes.
+                            Base de données SQLite pour la persistance des données.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-window-maximize"></i> Tkinter</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-eye"></i> Voir
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="network">
+                    <div class="project-showcase-image gradient-3">
+                        <div class="project-icon-large">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Terminé</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Infrastructure</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3>Infrastructure Réseau</h3>
+                        <p>
+                            Mise en place d'une infrastructure réseau complète avec serveur DNS, DHCP, 
+                            Active Directory sous Windows Server et serveur web sous Linux.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-windows"></i> Windows Server</span>
+                            <span><i class="fab fa-linux"></i> Linux</span>
+                            <span><i class="fas fa-network-wired"></i> DNS/DHCP</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-book"></i> Doc
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Config
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="web">
+                    <div class="project-showcase-image gradient-4">
+                        <div class="project-icon-large">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Terminé</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3>Site E-Commerce</h3>
+                        <p>
+                            Boutique en ligne avec système de panier, gestion des utilisateurs et 
+                            interface d'administration. Backend en PHP avec base de données MySQL.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-php"></i> PHP</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="app">
+                    <div class="project-showcase-image gradient-5">
+                        <div class="project-icon-large">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Terminé</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Application</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3>Calculatrice Scientifique</h3>
+                        <p>
+                            Calculatrice web avec fonctions scientifiques avancées, historique des calculs 
+                            et mode sombre/clair. Entièrement responsive.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-eye"></i> Essayer
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="network">
+                    <div class="project-showcase-image gradient-6">
+                        <div class="project-icon-large">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Sécurité</span>
+                            <span class="project-date">2026</span>
+                        </div>
+                        <h3>Scanner Réseau</h3>
+                        <p>
+                            Outil Python pour scanner et analyser les réseaux locaux. Détection des appareils 
+                            connectés, ports ouverts et vulnérabilités potentielles.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-code"></i> Scapy</span>
+                            <span><i class="fas fa-terminal"></i> Nmap</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-book"></i> Doc
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="web">
+                    <div class="project-showcase-image gradient-7">
+                        <div class="project-icon-large">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Terminé</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3>Blog Dynamique</h3>
+                        <p>
+                            Plateforme de blog avec système de gestion de contenu, authentification 
+                            utilisateurs, commentaires et panneau d'administration.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-php"></i> PHP</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fab fa-js"></i> AJAX</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="#" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-showcase-card" data-category="network">
+                    <div class="project-showcase-image gradient-8">
+                        <div class="project-icon-large">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge planned">Planifié</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span class="project-category">Cloud</span>
+                            <span class="project-date">2026</span>
+                        </div>
+                        <h3>Environnement Virtualisé</h3>
+                        <p>
+                            Création d'un environnement virtualisé complet avec plusieurs machines virtuelles,
+                            configuration réseau et services d'entreprise.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-cube"></i> VirtualBox</span>
+                            <span><i class="fab fa-docker"></i> Docker</span>
+                            <span><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-demo disabled">
+                                <i class="fas fa-clock"></i> Bientôt
+                            </a>
+                            <a href="#" class="project-btn btn-code disabled">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Une idée de projet ?</h2>
+                <p>Je suis toujours ouvert à de nouvelles collaborations et défis techniques !</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">
+                    <span>Me contacter</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">&lt;MBH/&gt;</div>
+            <p>Conçu et développé avec <i class="fas fa-heart"></i> par Mohamed BEN HARIZ</p>
+            <p class="footer-year">© 2026 - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="projects-script.js"></script>
+</body>
+</html>

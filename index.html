@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed BEN HARIZ | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">&lt;MBH/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Accueil</a></li>
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="tableau-synthese.html" class="nav-link">Tableau de Synthèse</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Bonjour, je suis</span>
+                <h1 class="glitch" data-text="Mohamed BEN HARIZ">Mohamed BEN HARIZ</h1>
+                <div class="typing-container">
+                    <span class="static-text">Je suis </span>
+                    <span class="dynamic-text"></span>
+                    <span class="cursor-typing">|</span>
+                </div>
+                <p class="hero-description">
+                    Étudiant passionné en <span class="highlight">BTS SIO</span> première année à l'<span class="highlight">EFREI Paris</span>, 
+                    spécialisé dans le développement et les réseaux informatiques.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Me contacter</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/w9n0-cloud" class="social-link" data-tooltip="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mh._948" class="social-link" data-tooltip="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:nassimbenhariz@gmail.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="rotating-border"></div>
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="floating-icons">
+                    <div class="float-icon icon-1"><i class="fab fa-html5"></i></div>
+                    <div class="float-icon icon-2"><i class="fab fa-css3-alt"></i></div>
+                    <div class="float-icon icon-3"><i class="fab fa-js"></i></div>
+                    <div class="float-icon icon-4"><i class="fab fa-python"></i></div>
+                    <div class="float-icon icon-5"><i class="fas fa-network-wired"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                À propos de moi
+            </h2>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="image-frame">
+                        <div class="about-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <p>
+                        Passionné par l'informatique depuis toujours, je suis actuellement en 
+                        <span class="highlight">première année de BTS SIO</span> (Services Informatiques aux Organisations).
+                    </p>
+                    <p>
+                        Mon parcours m'a permis d'acquérir des compétences solides aussi bien en 
+                        <span class="highlight">développement</span> qu'en <span class="highlight">administration réseau</span>.
+                    </p>
+                    <p>
+                        Je suis constamment à la recherche de nouveaux défis et j'aime apprendre 
+                        de nouvelles technologies pour enrichir mes connaissances.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>+
+                            <span class="stat-label">Projets</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>+
+                            <span class="stat-label">Langages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>%
+                            <span class="stat-label">Motivation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Mes Compétences
+            </h2>
+            
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="dev">
+                    <i class="fas fa-code"></i>
+                    Développement
+                </button>
+                <button class="tab-btn" data-tab="network">
+                    <i class="fas fa-network-wired"></i>
+                    Réseaux
+                </button>
+                <button class="tab-btn" data-tab="tools">
+                    <i class="fas fa-tools"></i>
+                    Outils
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <div class="tab-content active" id="dev">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h3>PHP</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>SQL</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="network">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Administration Serveur</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <h3>Linux</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <h3>Windows Server</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Sécurité Réseau</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>TCP/IP</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>Configuration Réseau</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Git</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <h3>Terminal/CLI</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>VirtualBox/VMware</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h3>VS Code</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3>Docker</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tableau" class="tableau-preview">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Tableau de Synthèse BTS SIO
+            </h2>
+            
+            <div class="tableau-preview-content">
+                <div class="tableau-preview-card">
+                    <div class="preview-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Compétences BTS SIO</h3>
+                    <p>Retrouvez l'ensemble de mes compétences acquises en cours, organisées selon le référentiel officiel du BTS SIO :</p>
+                    <ul class="preview-list">
+                        <li><i class="fas fa-check"></i> Bloc 1 - Support et mise à disposition de services</li>
+                        <li><i class="fas fa-check"></i> Bloc 2 - Option SLAM (Développement)</li>
+                        <li><i class="fas fa-check"></i> Bloc 3 - Option SISR (Réseaux)</li>
+                    </ul>
+                    <a href="tableau-synthese.html" class="btn btn-primary">
+                        <span>Voir le tableau complet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="stat-icon"><i class="fas fa-headset"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="6">0</span>
+                            <span class="stat-label">Catégories Bloc 1</span>
+                        </div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Catégories SLAM</span>
+                        </div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="stat-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Catégories SISR</span>
+                        </div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="25">0</span>+
+                            <span class="stat-label">Compétences acquises</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Mon Parcours
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Présent</div>
+                        <h3>BTS SIO - EFREI Paris</h3>
+                        <p>Formation en Services Informatiques aux Organisations à la Grande école d'ingénieurs informatique habilitée par la CTI - Villejuif</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>BAC PRO BTP</h3>
+                        <p>Obtention du Baccalauréat Professionnel dans le secteur du Bâtiment et Travaux Publics</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>SICRA Île-de-France</h3>
+                        <p>Déconstruction de 86 logements et reconstruction de 168 logements sociaux - L'Haÿ-les-Roses</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>AMT Île-de-France</h3>
+                        <p>Projet 58 logements et 53 places de parking - Dalle d'armature, prise de connaissance terrain</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Certifications</div>
+                        <h3>BAFA/BAFD & PSC1</h3>
+                        <p>Certifications d'animation et de premiers secours civiques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Me Contacter
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3>Discutons ensemble !</h3>
+                    <p>Je suis toujours ouvert aux nouvelles opportunités et collaborations. N'hésitez pas à me contacter !</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nassimbenhariz@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 7 49 22 31 29</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>120 rue Youri Gagarine, 94800 Villejuif</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/w9n0-cloud" class="contact-social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/mh._948" class="contact-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Votre Nom</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Votre Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Sujet</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Votre Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Envoyer</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">&lt;MBH/&gt;</div>
+            <p>Conçu et développé avec <i class="fas fa-heart"></i> par Mohamed BEN HARIZ</p>
+            <p class="footer-year">© 2026 - Tous droits réservés</p>
+        </div>
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="loader-inner">
+                <span>M</span>
+                <span>B</span>
+                <span>H</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,868 @@
+/* ==========================================
+   TABLEAU DE SYNTHÈSE STYLES
+   ========================================== */
+
+.tableau-page {
+    background: var(--dark);
+}
+
+/* Hero Section */
+.tableau-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 20px 60px;
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.2) 0%, rgba(0, 206, 201, 0.1) 100%);
+    position: relative;
+}
+
+.tableau-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--dark), transparent);
+}
+
+.tableau-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tableau-subtitle {
+    font-size: 1.4rem;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.tableau-info {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* Candidat Info */
+.candidat-info {
+    padding: 40px 0;
+}
+
+.info-card {
+    background: var(--dark-light);
+    border-radius: 20px;
+    padding: 30px 40px;
+    border-left: 5px solid var(--primary);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Tableau Section */
+.tableau-section {
+    padding: 40px 0 80px;
+}
+
+/* Main Table Title */
+.main-table-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text);
+}
+
+.main-table-title i {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+/* Main Synthese Table Wrapper */
+.main-synthese-wrapper {
+    background: var(--dark-light);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.table-scroll {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Main Synthese Table */
+.main-synthese-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1200px;
+}
+
+.main-synthese-table thead tr {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.main-synthese-table th {
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    vertical-align: middle;
+    border-bottom: 3px solid var(--primary);
+}
+
+.main-synthese-table th.col-realisation {
+    text-align: left;
+    min-width: 350px;
+}
+
+.main-synthese-table th.col-periode {
+    min-width: 100px;
+}
+
+.main-synthese-table th.col-competence {
+    min-width: 120px;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+.main-synthese-table th small {
+    display: block;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: 5px;
+    font-size: 0.7rem;
+}
+
+/* Table Body */
+.realisation-row {
+    transition: all 0.3s ease;
+}
+
+.realisation-row:hover {
+    background: rgba(108, 92, 231, 0.1);
+}
+
+.realisation-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.realisation-row:nth-child(even):hover {
+    background: rgba(108, 92, 231, 0.1);
+}
+
+.realisation-row td {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+}
+
+/* Highlight Row (Projet Principal) */
+.highlight-row {
+    background: linear-gradient(90deg, rgba(108, 92, 231, 0.15), rgba(0, 206, 201, 0.1)) !important;
+    border-left: 4px solid var(--primary);
+}
+
+.highlight-row:hover {
+    background: linear-gradient(90deg, rgba(108, 92, 231, 0.25), rgba(0, 206, 201, 0.15)) !important;
+}
+
+/* Realisation Name Cell */
+.realisation-name {
+    text-align: left;
+}
+
+.realisation-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.realisation-title i {
+    font-size: 1.3rem;
+    color: var(--primary);
+    width: 40px;
+    height: 40px;
+    background: rgba(108, 92, 231, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.realisation-docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 52px;
+}
+
+.doc-tag {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Periode Cell */
+.periode {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Check Cell */
+.check-cell {
+    text-align: center;
+}
+
+.check-cell i {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    animation: checkPulse 2s ease-in-out infinite;
+}
+
+@keyframes checkPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* ==========================================
+   PROJETS DETAILS SECTION
+   ========================================== */
+
+.projets-details {
+    padding: 80px 0;
+    background: linear-gradient(180deg, var(--dark) 0%, rgba(108, 92, 231, 0.05) 100%);
+}
+
+.section-title-alt {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--text);
+}
+
+.title-number {
+    color: var(--primary);
+    font-family: 'Fira Code', monospace;
+    margin-right: 15px;
+}
+
+/* Projets Grid */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Projet Card */
+.projet-card {
+    background: var(--dark-light);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projet-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-main);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.projet-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Featured Card */
+.projet-card.featured {
+    border: 2px solid var(--primary);
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, var(--dark-light) 100%);
+    grid-column: span 2;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gradient-main);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Projet Header */
+.projet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.projet-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.projet-icon.debian {
+    background: linear-gradient(135deg, #A80030 0%, #D70A53 100%);
+}
+
+.projet-icon.glpi {
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+}
+
+.projet-icon.support {
+    background: linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%);
+}
+
+.projet-icon.web {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.projet-icon.windows {
+    background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%);
+}
+
+.projet-icon.database {
+    background: linear-gradient(135deg, #4479A1 0%, #00758F 100%);
+}
+
+.projet-icon.python {
+    background: linear-gradient(135deg, #3776AB 0%, #FFD43B 100%);
+}
+
+.projet-icon.server {
+    background: linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%);
+}
+
+.projet-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.projet-type {
+    background: rgba(108, 92, 231, 0.2);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.projet-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Projet Content */
+.projet-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.projet-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Projet Competences */
+.projet-competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.projet-competences span {
+    background: rgba(0, 206, 201, 0.1);
+    color: var(--secondary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.projet-competences span i {
+    font-size: 0.7rem;
+}
+
+/* Projet Technologies */
+.projet-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projet-technologies span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-family: 'Fira Code', monospace;
+}
+
+.projet-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--gradient-1);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.projet-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+}
+
+.projet-link i {
+    font-size: 0.8rem;
+}
+
+/* ==========================================
+   STATS SECTION
+   ========================================== */
+
+.stats-section {
+    padding: 60px 0;
+    background: var(--dark);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-card {
+    background: var(--dark-light);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: var(--gradient-main);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(108, 92, 231, 0.2);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(108, 92, 231, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.stat-icon i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   LEGENDE SECTION
+   ========================================== */
+
+.legende-section {
+    padding: 60px 0;
+    background: rgba(108, 92, 231, 0.03);
+}
+
+.legende-card {
+    background: var(--dark-light);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.legende-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text);
+}
+
+.legende-card h3 i {
+    color: var(--primary);
+}
+
+.competences-legende {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.comp-item {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.comp-item:hover {
+    background: rgba(108, 92, 231, 0.1);
+    transform: translateX(5px);
+}
+
+.comp-item i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.comp-item strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.comp-item p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ==========================================
+   ACTIONS SECTION
+   ========================================== */
+
+.actions-section {
+    padding: 60px 0;
+}
+
+.actions-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--gradient-main);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(108, 92, 231, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .projets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projet-card.featured {
+        grid-column: span 2;
+    }
+    
+    .competences-legende {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projet-card.featured {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .tableau-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-table-title {
+        font-size: 1.5rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .competences-legende {
+        grid-template-columns: 1fr;
+    }
+    
+    .actions-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .tableau-hero {
+        padding: 120px 15px 40px;
+    }
+    
+    .tableau-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .projets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-value {
+        font-size: 2.5rem;
+    }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+
+@media print {
+    .navbar,
+    .cursor,
+    .cursor-follower,
+    #particles-js,
+    .hamburger,
+    .actions-section,
+    .footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .tableau-page {
+        background: white !important;
+    }
+    
+    .tableau-hero {
+        padding: 20px !important;
+        min-height: auto !important;
+        background: none !important;
+    }
+    
+    .tableau-hero h1 {
+        color: black !important;
+        -webkit-text-fill-color: black !important;
+        font-size: 2rem;
+    }
+    
+    .info-card,
+    .main-synthese-wrapper,
+    .projet-card,
+    .stat-card,
+    .legende-card {
+        background: white !important;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+    
+    .realisation-row,
+    .realisation-row:hover,
+    .highlight-row,
+    .highlight-row:hover {
+        background: white !important;
+    }
+    
+    .realisation-row td {
+        border-bottom: 1px solid #ddd !important;
+    }
+    
+    .main-synthese-table thead tr {
+        background: #333 !important;
+    }
+    
+    .main-synthese-table th {
+        color: white !important;
+    }
+    
+    .realisation-title,
+    .info-value,
+    .projet-card h3,
+    .stat-value,
+    .main-table-title,
+    .section-title-alt,
+    .legende-card h3,
+    .comp-item strong {
+        color: black !important;
+        -webkit-text-fill-color: black !important;
+    }
+    
+    .check-cell i {
+        color: #00CEC9 !important;
+    }
+    
+    .projets-details {
+        background: white !important;
+    }
+    
+    .legende-section {
+        background: #f5f5f5 !important;
+    }
+}
