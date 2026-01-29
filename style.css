@@ -644,6 +644,132 @@ section {
     margin-bottom: 10px;
 }
 
+.section-link {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+.section-link:hover {
+    color: var(--primary);
+}
+
+.section-link i {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* ==========================================
+   QUICK ACCESS SECTION
+   ========================================== */
+.quick-access {
+    padding: 100px 0;
+    background: var(--dark);
+    position: relative;
+}
+
+.quick-access-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.quick-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.quick-card {
+    background: var(--dark-light);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid transparent;
+    display: block;
+}
+
+.quick-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-1);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.quick-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.quick-card:hover::before {
+    transform: scaleX(1);
+}
+
+.quick-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.quick-card:hover .quick-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.quick-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.quick-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.quick-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(108, 92, 231, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: var(--transition);
+}
+
+.quick-card:hover .quick-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* ==========================================
    ABOUT SECTION
    ========================================== */
@@ -704,6 +830,28 @@ section {
 
 .stat-item {
     text-align: center;
+}
+
+.stat-item.clickable {
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.stat-item.clickable:hover {
+    background: rgba(108, 92, 231, 0.1);
+    transform: translateY(-5px);
+}
+
+.stat-item.clickable .stat-label i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.stat-item.clickable:hover .stat-label i {
+    transform: translateX(5px);
 }
 
 .stat-number {
@@ -993,6 +1141,14 @@ section {
     }
     
     .tableau-preview-card {
+        padding: 30px 20px;
+    }
+    
+    .quick-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-card {
         padding: 30px 20px;
     }
 }
@@ -1485,6 +1641,10 @@ section {
    RESPONSIVE
    ========================================== */
 @media (max-width: 1024px) {
+    .quick-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
