@@ -124,7 +124,7 @@
 .main-synthese-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 1200px;
+    min-width: 900px;
 }
 
 .main-synthese-table thead tr {
@@ -132,9 +132,9 @@
 }
 
 .main-synthese-table th {
-    padding: 20px 15px;
+    padding: 15px 8px;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: #fff;
     vertical-align: middle;
@@ -143,17 +143,17 @@
 
 .main-synthese-table th.col-realisation {
     text-align: left;
-    min-width: 350px;
+    min-width: 280px;
 }
 
 .main-synthese-table th.col-periode {
-    min-width: 100px;
+    min-width: 80px;
 }
 
 .main-synthese-table th.col-competence {
-    min-width: 120px;
-    font-size: 0.75rem;
-    line-height: 1.4;
+    min-width: 90px;
+    font-size: 0.65rem;
+    line-height: 1.3;
 }
 
 .main-synthese-table th small {
@@ -182,7 +182,7 @@
 }
 
 .realisation-row td {
-    padding: 20px 15px;
+    padding: 12px 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     vertical-align: middle;
 }
@@ -205,37 +205,38 @@
 .realisation-title {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 1rem;
+    gap: 10px;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .realisation-title i {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--primary);
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: rgba(108, 92, 231, 0.1);
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .realisation-docs {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-left: 52px;
+    gap: 6px;
+    margin-left: 42px;
 }
 
 .doc-tag {
     background: rgba(255, 255, 255, 0.05);
-    padding: 4px 10px;
+    padding: 3px 8px;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -243,7 +244,7 @@
 /* Periode Cell */
 .periode {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     font-weight: 500;
 }
